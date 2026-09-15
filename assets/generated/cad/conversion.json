@@ -1,0 +1,10 @@
+{
+  "head_bracket": {
+    "input": "CameraBracket_Bent(Neck Module_D435 Multi Bracket).stp",
+    "status": "(0, '')"
+  },
+  "wrist_assembly": {
+    "input": "C_CameraBracket_Bent(HighSpeedGripper(R1.1&1.2)).stp",
+    "status": "(0, '')"
+  }
+}

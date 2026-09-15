@@ -1,0 +1,7 @@
+{
+  "default": {
+    "floor_z_m": 0.0,
+    "yaw_offset_rad": 0.0,
+    "retreat_m": 0.45
+  }
+}

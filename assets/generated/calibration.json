@@ -1,0 +1,121 @@
+{
+  "status": "nominal CAD-to-link calibration; verify against hardware before sim2real",
+  "camera_focal_length_mm": 19.3,
+  "camera_horizontal_aperture_mm": 36.0,
+  "camera_clipping_range_m": [
+    0.01,
+    20.0
+  ],
+  "intrinsics_source": "configurable benchmark pinhole defaults; not measured D405 intrinsics",
+  "wrist_mounts": {
+    "left": {
+      "base_translation_m": [
+        0,
+        0.0065,
+        -0.065
+      ],
+      "base_rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "image_roll_deg": 180,
+      "delta_local_axis_angle_deg": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "pivot_cad_m": [
+        0,
+        -0.039,
+        0.0385
+      ],
+      "attachment_parent_m": [
+        0.0,
+        -0.0249999706,
+        -0.0280549808
+      ]
+    },
+    "right": {
+      "base_translation_m": [
+        0.0,
+        0.0140000294,
+        -0.0665549808
+      ],
+      "base_rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "image_roll_deg": 180
+    }
+  },
+  "head_bracket_mount": {
+    "base_translation_m": [
+      0.033,
+      0,
+      0.02
+    ],
+    "base_rotation_xyz_deg": [
+      0,
+      0,
+      -90
+    ],
+    "delta_parent_axis_angles_deg": [
+      [
+        0,
+        1,
+        0,
+        -90
+      ],
+      [
+        0,
+        0,
+        1,
+        90
+      ]
+    ],
+    "pivot_cad_m": [
+      -0.003,
+      0,
+      0
+    ],
+    "attachment_parent_m": [
+      0,
+      -0.00034,
+      0.045
+    ]
+  },
+  "HEAD_D405_BRACKET_TRANSLATION_M": [
+    0.044000002,
+    0.012,
+    -3.508e-09
+  ],
+  "HEAD_D405_BRACKET_BASIS_ROWS": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "mount_geometry_notes": {
+    "convention": "USD row vectors, meters, one xformOp:transform; ordered parent deltas multiply on right; local deltas on left. CAD scale lives on child.",
+    "left": "Upper-face selection uses measured ee_left world pose: local -Y is up in raised-arm reference pose. CAD tab seats on independently extracted left flat Y=-24.9999706 mm. Existing axial station/contact retained; mechanical half-turn removed and image roll compensated.",
+    "head": "CAD bottom Y=0; four mounting holes X=-16/+10, Z=+/-18 mm match head top holes X=+/-13, Y=-18.34/+17.66 mm at Z=45 mm after delta. Pivot is hole-pattern center (-3,0,0) mm.",
+    "head_d405": "Translation-only least-squares registration: D405 rear holes (X=+/-10,Y=0,Z=-23) mm to bracket inner flange holes (X=21,Y=12,Z=+/-10) mm. Both pairs spaced 20 mm. Existing housing and optical orientations retained.",
+    "optical": "CAD width +Y, forward +Z; keep CAD-to-OpenGL basis. Left image roll compensates new 180 degree mechanical rotation; right retains 180 degrees.",
+    "right": "Contact tab CAD Y=-39 mm maps to independently extracted right body flat Y=-25 mm; X retained; Z shifted minimally onto the flat patch below its curved rim. Body mesh omits fastening holes."
+  },
+  "head_image_roll_deg": -90
+}

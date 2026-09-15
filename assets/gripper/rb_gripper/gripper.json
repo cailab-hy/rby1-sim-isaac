@@ -1,0 +1,12 @@
+{
+  "left": {
+    "body": "ee_left",
+    "mount_pos": [0.0, 0.0, -0.1261],
+    "mount_rot": [1.0, 0.0, 0.0, 0.0]
+  },
+  "right": {
+    "body": "ee_right",
+    "mount_pos": [0.0, 0.0, -0.1261],
+    "mount_rot": [1.0, 0.0, 0.0, 0.0]
+  }
+}
