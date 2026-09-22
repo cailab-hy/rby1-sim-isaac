@@ -19,12 +19,12 @@
         0,
         0
       ],
-      "image_roll_deg": 180,
+      "image_roll_deg": 0,
       "delta_local_axis_angle_deg": [
         0,
         0,
         1,
-        0
+        180
       ],
       "pivot_cad_m": [
         0,
@@ -33,7 +33,7 @@
       ],
       "attachment_parent_m": [
         0.0,
-        -0.0249999706,
+        0.0249999706,
         -0.0280549808
       ]
     },
@@ -111,7 +111,7 @@
   ],
   "mount_geometry_notes": {
     "convention": "USD row vectors, meters, one xformOp:transform; ordered parent deltas multiply on right; local deltas on left. CAD scale lives on child.",
-    "left": "Upper-face selection uses measured ee_left world pose: local -Y is up in raised-arm reference pose. CAD tab seats on independently extracted left flat Y=-24.9999706 mm. Existing axial station/contact retained; mechanical half-turn removed and image roll compensated.",
+    "left": "Opposite +Y mounting face to match supplied real ready-pose photo; local Z half-turn, CAD pivot seated on +24.9999706 mm face. Runtime visual comparison pending.",
     "head": "CAD bottom Y=0; four mounting holes X=-16/+10, Z=+/-18 mm match head top holes X=+/-13, Y=-18.34/+17.66 mm at Z=45 mm after delta. Pivot is hole-pattern center (-3,0,0) mm.",
     "head_d405": "Translation-only least-squares registration: D405 rear holes (X=+/-10,Y=0,Z=-23) mm to bracket inner flange holes (X=21,Y=12,Z=+/-10) mm. Both pairs spaced 20 mm. Existing housing and optical orientations retained.",
     "optical": "CAD width +Y, forward +Z; keep CAD-to-OpenGL basis. Left image roll compensates new 180 degree mechanical rotation; right retains 180 degrees.",
